@@ -1,5 +1,5 @@
 {
-  "homepage": "https://dartangel.github.io/nd_frontend/",
+  "homepage": "https://dartangel.github.io/",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -38,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
