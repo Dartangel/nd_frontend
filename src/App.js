@@ -18,7 +18,7 @@ function App() {
   return (
     <Router basename="/nd_frontend">
       <Routes>
-        <Route path="/" element={isAuthenticated ? <Mirta /> : <Navigate to="/login" />} />
+        <Route exact path="/" element={isAuthenticated ? <Mirta /> : <Navigate to="/login" />} />
         <Route path="/login" element={isAuthenticated ? <Navigate to="/main" /> : <Login onLogin={handleLogin} />} />
         <Route path="/students/:id" element={isAuthenticated ? <StudentDetail /> : <Navigate to="/login" />} />
         <Route path="/main" element={isAuthenticated ? <MainScreen /> : <Navigate to="/login" />} />
