@@ -44,6 +44,7 @@ export default function MainScreen() {
     navigate('/addStudent'); // Переход на экран добавления студента
   };
 
+  
   // Функция для проверки задолженности
   const hasDebt = (student) => {
     return student.servicePayed < student.serviceCost || student.annualCost > student.annuaPayed;
