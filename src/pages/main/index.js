@@ -16,7 +16,7 @@ export default function MainScreen() {
       const token = localStorage.getItem('token'); // Получаем токен
 
       try {
-        const response = await fetch('http://localhost:3000/students', {
+        const response = await fetch('http://185.230.64.36:3000/students', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

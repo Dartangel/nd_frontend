@@ -11,7 +11,7 @@ const StudentDetail = () => {
         const fetchStudent = async () => {
             const token = localStorage.getItem('token');
             try {
-                const response = await fetch(`http://localhost:3000/students/${studentId}`, {
+                const response = await fetch(`http://185.230.64.36:3000/students/${studentId}`, {
                     method: 'GET',
                     headers: {
                         'Authorization': `Bearer ${token}`,
@@ -66,9 +66,9 @@ const StudentDetail = () => {
                 <p><strong>Year:</strong> {student.year}</p>
                 <p><strong>Annual Cost:</strong> {student.annualCost}</p> {/* Отображаем годовую оплату */}
                 <p><strong>Annual Payed:</strong> {student.annualPayed}</p> {/* Отображаем годовую оплату */}
-                {student.passport && <p><strong>Passport:</strong> <a href={`http://localhost:3000/${student.passport}`} target="_blank" rel="noopener noreferrer">View Passport</a></p>}
-                {student.diplom && <p><strong>Diplom:</strong> <a href={`http://localhost:3000/${student.diplom}`} target="_blank" rel="noopener noreferrer">View Diplom</a></p>}
-                {student.image && <p><strong>Image:</strong> <a href={`http://localhost:3000/${student.image}`} target="_blank" rel="noopener noreferrer">View Image</a></p>}
+                {student.passport && <p><strong>Passport:</strong> <a href={`http://185.230.64.36:3000/${student.passport}`} target="_blank" rel="noopener noreferrer">View Passport</a></p>}
+                {student.diplom && <p><strong>Diplom:</strong> <a href={`http://185.230.64.36:3000/${student.diplom}`} target="_blank" rel="noopener noreferrer">View Diplom</a></p>}
+                {student.image && <p><strong>Image:</strong> <a href={`http://185.230.64.36:3000/${student.image}`} target="_blank" rel="noopener noreferrer">View Image</a></p>}
             </div>
             <button onClick={handleEditClick} style={styles.button}>Edit Student</button>
         </div>

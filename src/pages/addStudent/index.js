@@ -62,7 +62,7 @@ export default function AddStudent() {
         if (imageFile) formData.append('image', imageFile);
 
         try {
-            const response = await fetch('http://localhost:3000/students', {
+            const response = await fetch('http://185.230.64.36:3000/students', {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,
